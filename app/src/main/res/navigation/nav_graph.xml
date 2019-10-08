@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmento_perfil">
+    <fragment
+        android:id="@+id/fragmento_perfil"
+        android:name="com.app.tinderuv.profileFragment"
+        tools:layout="@layout/activity_profile2"/>
+    <fragment
+        android:id="@+id/fragmento_match"
+        android:name="com.app.tinderuv.fragment_match"
+        tools:layout="@layout/fragment_match"/>
+    <fragment
+        android:id="@+id/fragmento_chat"
+        android:name="com.app.tinderuv.ChatFragment"
+        tools:layout="@layout/fragment_chat"/>
+    <fragment
+        android:id="@+id/fragmento_buscar"
+        android:name="com.app.tinderuv.SearchFragment"
+        tools:layout="@layout/fragment_search"/>
+    <fragment
+        android:id="@+id/fragmento_configuracion"
+        android:name="com.app.tinderuv.configureFragment"
+        tools:layout="@layout/fragment_configure"/>
+    <fragment
+        android:id="@+id/fragmento_salir"
+        tools:layout="@layout/activity_profile2"/>
+
+
+</navigation>

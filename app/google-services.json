@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "160237411376",
+    "firebase_url": "https://tinderuv.firebaseio.com",
+    "project_id": "tinderuv",
+    "storage_bucket": "tinderuv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160237411376:android:672635d6edcbb2b029e1f5",
+        "android_client_info": {
+          "package_name": "com.app.tinderuv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160237411376-3k95q4ih4jcqiucrl01urb8877ftc20p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tinderuv",
+            "certificate_hash": "7093b8f48e76ea3ff73e637a5b06e4415ce7d0ab"
+          }
+        },
+        {
+          "client_id": "160237411376-505c9841c7m2jn2mt7s19nsb7uvp3uh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsPtkzkPfcmjgjOCPxsdK9p2GfXC1yhUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160237411376-505c9841c7m2jn2mt7s19nsb7uvp3uh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

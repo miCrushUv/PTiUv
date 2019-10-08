@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/perfil_item"
+            android:title="Perfil"/>
+        <item
+            android:id="@+id/match_item"
+            android:title="Match"/>
+        <item
+            android:id="@+id/chat_item"
+            android:title="Chat"/>
+        <item
+            android:id="@+id/buscar_item"
+            android:title="Buscar"/>
+        <item
+            android:id="@+id/configuracion_item"
+            android:title="Configuracion"/>
+        <item
+            android:id="@+id/salir_item"
+            android:title="Salir"/>
+
+    </group>
+</menu>

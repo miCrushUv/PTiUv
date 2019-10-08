@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarme"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/colorBlack"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/emailLayoutR"
+        android:layout_centerVertical="true">
+        <EditText
+            android:id="@+id/emailTxt"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/psswdLayoutR"
+        android:layout_below="@id/emailLayoutR"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/psswdTxt"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/psswdLayoutR"
+        android:layout_marginTop="77dp"
+        android:text="Registrarme ahora!"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tengoCuentaBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnRegistrar"
+        android:text="Ya tengo cuenta"/>
+</RelativeLayout>
