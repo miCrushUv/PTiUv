@@ -71,7 +71,7 @@ public class profileFragment extends Fragment {
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        })
+        });
         return view;
     }
 }
