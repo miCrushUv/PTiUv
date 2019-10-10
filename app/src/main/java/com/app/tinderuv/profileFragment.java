@@ -63,7 +63,7 @@ public class profileFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
-
+                    //Ejemplo comit
                 }
             }
 
