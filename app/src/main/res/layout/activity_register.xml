@@ -7,14 +7,19 @@
     android:padding="20dp"
     tools:context=".RegisterActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registrarme"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        android:textColor="@color/colorBlack"
-        />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/registro"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="40dp" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
