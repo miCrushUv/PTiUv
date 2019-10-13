@@ -9,7 +9,6 @@
     tools:context=".MainActivity">
 
     //Agredando logo a la pantalla de inicio
-
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="400dp"
@@ -20,7 +19,6 @@
         tools:layout_editor_absoluteY="-51dp" />
 
     //Botón ingreso
-
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="match_parent"
@@ -33,7 +31,6 @@
         tools:layout_editor_absoluteX="16dp" />
 
     //Botón registro
-
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"

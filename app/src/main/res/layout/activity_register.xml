@@ -3,71 +3,100 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/fondo"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:padding="25dp"
     tools:context=".RegisterActivity">
 
 
     <ImageView
         android:id="@+id/imageview"
-        android:layout_width="300dp"
-        android:layout_height="140dp"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="86dp"
         android:scaleType="fitXY"
-        android:src="@drawable/registro"
+        android:src="@drawable/registro2"
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="40dp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayoutR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/emailLayoutR"
-        android:layout_centerVertical="true">
+        android:layout_centerInParent="true"
+        android:foregroundTint="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:passwordToggleTint="@color/colorWhite">
+
         <EditText
             android:id="@+id/emailTxt"
-            android:inputType="textEmailAddress"
-            android:hint="Email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorWhite"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorLink="@color/colorWhite"
+            android:textCursorDrawable="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/psswdLayoutR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/psswdLayoutR"
         android:layout_below="@id/emailLayoutR"
-        app:passwordToggleEnabled="true">
+        android:layout_centerInParent="true"
+        android:textColorHint="@color/colorWhite"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorWhite">
+
         <EditText
             android:id="@+id/psswdTxt"
-            android:inputType="textPassword"
-            android:hint="Contraseña"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorWhite"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/btnRegistrar"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/psswdLayoutR"
-        android:layout_marginTop="77dp"
-        android:text="Registrarme ahora!"
-        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/tengoCuentaBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="15dp"
-        android:textColor="@color/colorBlack"
-        android:layout_marginTop="30dp"
         android:layout_below="@id/btnRegistrar"
-        android:text="Ya tengo cuenta"/>
+        android:layout_marginTop="30dp"
+        android:text="Ya tengo cuenta"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="192dp"
+        android:text="registrar"
+        app:cornerRadius="150dp"
+        app:iconTint="@color/colorWhite"
+        app:strokeColor="@color/colorWhite"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="0dp"
+        android:text="Button" />
+
 </RelativeLayout>
