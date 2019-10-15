@@ -1,62 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo"
     tools:context=".profileFragment">
+    <!--Acomoda a tu gusto irais, solo recuerda no cambiar los id's-->
+    <!--El scrollView dejalo, de ahi si quieres puedes cambiar lo que quieras :( -->
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:background="#F52AE6">
-        </RelativeLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="100dp">
+            android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/avatarIv"
-                android:layout_marginStart="20dp"
-                android:padding="5dp"
-                android:background="@color/colorPrimary"
-                android:src="@drawable/ic_add_image"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginLeft="20dp"/>
-            <LinearLayout
+                android:id="@+id/profileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F52AE6">
+            </ImageView>
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
+                android:layout_below="@id/profileImage"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/avatarIv"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_add_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"/>
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:textSize="25sp"
-                    android:textColor="@color/colorWhite"
-                    android:layout_marginLeft="5dp"
-                    android:text="Nombre"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:textColor="@color/colorWhite"
-                    android:layout_marginLeft="5dp"
-                    android:text="cosa1"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:textColor="@color/colorWhite"
-                    android:layout_marginLeft="5dp"
-                    android:text="cosa2"/>
-            </LinearLayout>
-        </LinearLayout>
-    </RelativeLayout>
+                    android:layout_below="@id/avatarIv"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/nombreProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Nombre"/>
+                    <TextView
+                        android:id="@+id/fraseProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Frase"/>
+                    <TextView
+                        android:id="@+id/universidadProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Universidad"/>
+                    <TextView
+                        android:id="@+id/facultadProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Facultad"/>
+                    <TextView
+                        android:id="@+id/edadProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Edad"/>
+                    <TextView
+                        android:id="@+id/estadoProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Estado"/>
+                    <TextView
+                        android:id="@+id/carreraProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Carrera"/>
+                    <TextView
+                        android:id="@+id/ejercicioProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Ejercicio:"/>
+                    <TextView
+                        android:id="@+id/hijosProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Hijos"/>
+                    <TextView
+                        android:id="@+id/generoProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Genero:"/>
+                    <TextView
+                        android:id="@+id/orientacionProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Orientacion:"/>
+                    <TextView
+                        android:id="@+id/complexionProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Complexion:"/>
+                    <TextView
+                        android:id="@+id/estaturaProfileTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text="Estatura:"/>
 
-</ScrollView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="5dp"
+                        android:text=""/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

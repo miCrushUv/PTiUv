@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
@@ -15,9 +17,19 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+
+import java.nio.file.Files;
 
 public class ProfileActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -34,6 +46,16 @@ public class ProfileActivity extends AppCompatActivity
     NavigationView navigationView;
 
     FirebaseAuth auth;
+
+    FloatingActionButton fab;
+
+    DatabaseReference databaseReference;
+
+    FirebaseDatabase database;
+
+    //Views
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +81,8 @@ public class ProfileActivity extends AppCompatActivity
 
         drawerLayout = findViewById(R.id.drawerLayout);
 
+        fab = findViewById(R.id.floatingEditProfile);
+
         navigationView = findViewById(R.id.navigationView);
 
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -70,7 +94,6 @@ public class ProfileActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         //Ok, you can move whatever you want from now
-
 
     }
 
@@ -149,4 +172,5 @@ public class ProfileActivity extends AppCompatActivity
         checkUserStatus();
         super.onStart();
     }
+
 }
