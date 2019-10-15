@@ -18,6 +18,7 @@ public class ChatFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+
     }
 
     @Nullable
