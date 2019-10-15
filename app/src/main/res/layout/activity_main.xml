@@ -8,37 +8,43 @@
     android:padding="30dp"
     tools:context=".MainActivity">
 
-    //Agredando logo a la pantalla de inicio
+
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="400dp"
         android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="9dp"
         android:scaleType="fitXY"
         android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="-28dp"
-        tools:layout_editor_absoluteY="-51dp" />
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp" />
 
-    //Botón ingreso
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/imageview"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/fondo"
         android:text="Ingresar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageview"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    //Botón registro
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/btnIngresar"
+        android:backgroundTint="@color/fondo"
         android:text="Registrarte"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar"
+        tools:layout_editor_absoluteX="30dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

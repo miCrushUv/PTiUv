@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/fondo"
     android:layout_height="match_parent"
-    android:padding="25dp"
+    android:padding="18dp"
     tools:context=".RegisterActivity">
 
 
@@ -17,8 +17,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="86dp"
         android:scaleType="fitXY"
-        android:src="@drawable/registro2"
-        tools:layout_editor_absoluteX="45dp"
+        android:src="@drawable/registro"
+        tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="40dp" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -59,20 +59,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorWhite"
+            android:drawableTint="@color/colorWhite"
             android:hint="Contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/tengoCuentaBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnRegistrar"
-        android:layout_marginTop="30dp"
-        android:text="Ya tengo cuenta"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        android:textSize="15dp" />
 
     <Button
         android:id="@+id/btnRegistrar"
@@ -80,23 +71,27 @@
         android:layout_height="37dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="false"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="192dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="129dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/colorWhite"
         android:text="registrar"
+        android:textColor="@color/letras"
         app:cornerRadius="150dp"
-        app:strokeColor="@color/colorWhite"
-        android:backgroundTint="@color/colorPrimaryDark"
-        app:strokeWidth="20dp" />
+        />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/tengoCuentaBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="0dp"
-        android:text="Button" />
+        android:layout_below="@id/btnRegistrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:text="Ya tengo cuenta"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
 
 </RelativeLayout>
